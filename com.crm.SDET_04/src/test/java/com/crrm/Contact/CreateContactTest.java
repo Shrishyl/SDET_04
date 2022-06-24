@@ -13,7 +13,7 @@ public class CreateContactTest extends BaseClass1
 	@Test
 	public void CreateContactTest1()
 	{
-	  	
+	  	//Hi.....
 		//get random number
 		 int ranNumber = JLib.getRandomNumber();
 		
