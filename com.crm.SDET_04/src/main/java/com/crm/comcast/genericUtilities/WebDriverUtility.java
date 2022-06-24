@@ -270,15 +270,20 @@ public void ClickOnEnterButton(WebDriver driver)
  * it is used to take screenshot
  * @param driver
  * @param screenShotName
+ * @return 
  * @throws IOException
  */
-public void takeScreenShot(WebDriver driver, String screenShotName) throws IOException 
+public static String takeScreenShot(WebDriver driver, String screenShotName) throws IOException 
 {
 		TakesScreenshot takescreenshot=  (TakesScreenshot)driver;
 		File src = takescreenshot.getScreenshotAs(OutputType.FILE);
 		File dst = new File(".\\screenshot/"+screenShotName+"PNG");
-		Files.copy(src, dst);		
+		Files.copy(src, dst);
+		return screenShotName;		
 }
+
+
+
 /**
  * it is used to perform scroll Actions
  * @param driver

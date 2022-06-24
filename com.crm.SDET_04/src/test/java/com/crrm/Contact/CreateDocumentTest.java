@@ -1,8 +1,5 @@
 package com.crrm.Contact;
 
-import java.io.IOException;
-
-import org.apache.poi.EncryptedDocumentException;
 import org.testng.annotations.Test;
 
 import com.crm.comcast.ObjectRepository.CreateNewDocumentPage;
@@ -13,7 +10,7 @@ import com.crm.comcast.genericUtilities.BaseClass1;
 public class CreateDocumentTest extends BaseClass1
 {
 @Test
-	public void CreateDocumentTest1() throws EncryptedDocumentException, IOException
+	public void CreateDocumentTest1() throws Throwable
 	{
 		
 		HomePage hp=new HomePage(driver);	

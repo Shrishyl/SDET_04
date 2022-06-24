@@ -18,6 +18,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass 
 
 {
+	public static WebDriver sdriver;
+
 	public WebDriver driver;
 	
 	public WebDriverUtility WLib=new WebDriverUtility();

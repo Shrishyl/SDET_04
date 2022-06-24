@@ -61,7 +61,7 @@ public void launchTheBrowser() throws Throwable
 	WLib.waitForPageToLoad(driver);
 	//WLib.waitForPageToLoadJSElement(driver);
 	
-	driver.get(URL);
+	sdriver.get(URL);
 	
 	driver.manage().window().maximize();
 	
